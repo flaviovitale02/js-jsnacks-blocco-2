@@ -18,6 +18,14 @@ for (let index = 0; index < parole.length; index++) {
     const parola = parole[index];
     let result = parola.charAt(0).toUpperCase() + parola.slice(1).toLowerCase()
     console.log(result)
+    console.log(endCaseWords(parola))
 }
 
 
+
+
+function endCaseWords(input) {
+    return input.toLowerCase().split(" ").map(function(item) {
+        return item.slice(0, -1) + item.slice(-1).toUpperCase();
+    }).join(" ");
+}
