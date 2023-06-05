@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Hello</title>
+
+    
+</head>
+<body>
+    <!-- ---Added Vue--- -->
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <div id="app">
+        <h1>Scrivo gli elementi dell'array</h1>
+        <p v-for="elements in array"> {{elements}} </p>
+        <h1>Scrivo i primi 10 numeri</h1>
+        <p v-for="n in 10"> {{n}} </p>
+    </div>
+    <script src="myscript.js" defer></script>
+</body>
+</html>

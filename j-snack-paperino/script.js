@@ -16,11 +16,14 @@ const parole = ['pippO', 'PluTI', 'mwsjndjNjnnS', 'ArmsANdo', 'bodyguarD', 'gaia
 
 for (let index = 0; index < parole.length; index++) {
     const parola = parole[index];
-    let result = parola.charAt(0).toUpperCase() + parola.slice(1).toLowerCase()
+    let result = parola.charAt(0).toUpperCase() + parola.substring(1).toLowerCase()
     console.log(result)
-    console.log(endCaseWords(parola))
 }
 
+for (let index = 0; index < parole.length; index++) {
+    const parola = parole[index];
+    console.log(endCaseWords(parola))
+}
 
 
 
